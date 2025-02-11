@@ -1,0 +1,52 @@
+\:root
+	--font-family: 'Montserrat', sans-serif
+	--bl-rgb: 17, 20, 45
+	--wh-rgb: 255, 255, 255
+	--pr-rgb: 77, 86, 201
+	--pr-h-rgb: 109, 113, 249
+	--bl: #11142D
+	--wh: #fff
+	--pr: #4D56C9
+	--pr-h: #6D71F9
+	--body-bg: #F6F6F8
+
+*, ::before, ::after
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+html,
+body
+	min-width: 370px
+
+body
+	font-family: var(--font-family)
+	font-size: 16px
+	font-weight: 500
+	line-height: 1.6
+	background-color: var(--body-bg)
+	color: var(--bl)
+
+ul
+	list-style: none
+
+svg
+	width: 1em
+	height: 1em
+	position: relative
+	pointer-events: none
+
+a
+	--color: var(--bl)
+	--bg: transparent
+	--hover-color: var(--pr)
+	--hover-bg: transparent
+	color: var(--color)
+	background-color: var(--bg)
+	text-decoration: none
+	display: inline-flex
+	transition: .25s
+
+	&:hover
+		color: var(--hover-color)
+		background-color: var(--hover-bg)
